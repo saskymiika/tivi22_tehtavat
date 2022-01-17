@@ -9,3 +9,8 @@
 
 | Komento | selitys |
 | -- | -- |
+| print("string") | tulostaa string parametrin arvon |
+| input() | palauttaa itse määritetyn string arvon |
+| type(muuttuja) | palauttaa muuttujan tyypin |
+| int(arvo) | muuttaa arvon kokonaisluvuksi |
+| str(arvo) | muuttaa arvon string muotoon |
