@@ -3,3 +3,4 @@
 
 #### Tehtävät
 - [viikko 1](./viikko_1)
+- [viikko 2](./viikko_2)
