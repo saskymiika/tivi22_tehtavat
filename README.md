@@ -3,3 +3,8 @@
 
 #### Tehtävät
 - [viikko 1](./viikko_1)
+
+
+### Python yleisiä komentoja
+
+| Komento | selitys |
