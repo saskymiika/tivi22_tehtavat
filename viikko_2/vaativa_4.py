@@ -17,8 +17,9 @@
 
 # painoindeksi = paino / (pituus * pituus)
 
-def main():
+from math import pow
 
+def main():
     print("Painoindeksi laskuri")
 
     pituus = input("Syötä pituus (cm): ")
@@ -29,8 +30,31 @@ def main():
         return
 
     # muuta float muotoon ja paino oikeaan yksikköön
-    pituus = float(pituus)
-    paino = float(paino) / 10
+    pituus = float(pituus) / 100 # senteistä metreiksi
+    paino = float(paino)
+
+    # float kahden desimaalin tarkkuudella 
+    # voi käyttää myös (p_indeksi = '%.2f' % p_indeksi) format() metodin sijaan
+    # format() metodi palauttaa arvon stringinä
+    p_indeksi = format(paino / pow(pituus, 2), ".2f")
+
+    # print("painoindeksi:", "%.2f" % p_indeksi)
+    print("Painoindeksi:", p_indeksi)
+
+    # muuta p_indeksi takaisin floatiksi
+    p_indeksi = float(p_indeksi)
+
+    # vertaa p_indeksiä taulukkoon
+    if p_indeksi >= 18.5 and p_indeksi < 25:
+        print("Normaali painoindeksi.")
+    elif p_indeksi >= 25 and p_indeksi < 30:
+        print("Ylipaino eli lievä lihavuus.")
+    elif p_indeksi >= 30 and p_indeksi < 35:
+        print("Merkittävä lihavuus.")
+    elif p_indeksi >= 35 and p_indeksi < 40:
+        print("Vaikea lihavuus.")
+    elif p_indeksi >= 40 and p_indeksi < 50:
+        print("sairaalloinen lihavuus.")
 
 
 if __name__ == "__main__":
