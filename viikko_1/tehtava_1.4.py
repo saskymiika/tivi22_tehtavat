@@ -1,15 +1,15 @@
-from datetime import date
-
-# käytä date modulia/kirjastoa
-today = date.today()
-
-# TEHTÄVÄ 1.4
+# 1. Tehtävä:
 
 # Tee ohjelma, joka kysyy käyttäjän nimeä ja ikää ja sen jälkeen 
 # tulostaa: Ajattele "NIMI"! Vuonna 2042 olet jo (ikä + 20) vuotta vanha.
 
 # Vinkki: Iän muuttujatyyppi pitää vaihtaa, jotta sillä voi suorittaa yhteenlaskua.
 # Nimi siis kokonaan isoilla kirjaimilla.
+
+from datetime import date
+
+# käytä date modulia/kirjastoa
+today = date.today()
 
 
 def main():
