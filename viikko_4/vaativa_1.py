@@ -22,20 +22,20 @@ Kiitos ohjelman käytöstä.
 import re
 
 def main():
-    strng = "this is my test string and I am going to use it now"
+    virke = input("Syötä jokin virke: ")
 
-    for i in strng.split():
-        match_object = re.match("[t-m]", i):
+    # etsi sanat virkkeestä regular expressionin avulla
+    #re.findall() metodi palauttaa kaikki sille määritetyt virkkeet listan muodossa
+    sanat = re.findall(r"\b[l-ö]\w+", virke) 
+    
+    print("\nVirkkeessä oli kirjaimilla l-ö alkavia sanoja seuraavat:\n")
 
-        if match_object:
-            print(match_object.groups())
-
-    # virke = input("Syötä jokin virke: ")
-    # virkkeen_sanat = virke.split()
-    # for sana in virkkeen_sanat:
-        # if re.findall("", sana[0])
-
+    for v in sanat:
+        print(v.upper())
+    
+    print("\nKiitos ohjelman käytöstä!")
 
 
 if __name__ == "__main__":
     main()
+
