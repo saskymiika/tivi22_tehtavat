@@ -6,3 +6,4 @@
 - [viikko 2](./viikko_2)
 - [viikko 3](./viikko_3)
 - [viikko 4](./viikko_4)
+- [viikko 5](./viikko_5)
