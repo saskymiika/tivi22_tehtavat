@@ -2,26 +2,39 @@
 
 # Tee ohjelma, joka pyytää käyttäjältä luvun ja selvittää, onko se parillinen vai pariton. Hyödynnä tarkistuksessa funktiota ja jakojäännöstä.
 
+def onko_parillinen(arvo):
+    return arvo % 2 == 0
+
+
 def main():
+    # syötä arvo luku-muuttujalle
     luku = input("Syötä kokonaisluku: ")
-
-    # t3 toinen luku
-    luku2 = input("Syötä toinen kokonaisluku: ")
-
-    # tarkista että käytetään numeroa
-    if not(luku.isdigit()) and not(luku2.isdigit()):
-        print("Ole hyvä ja käytä numeroita.")
+    
+    # tarkista että käytetään kokonaislukua isidigt() metodilla
+    if not(luku.isdigit()):
+        print("Ole hyvä ja käytä kokonaislukua.")
         return
 
-    # muuttaa lukuarvon float muotoon
+    # muuttaa lukuarvon INT muotoon
     luku = int(luku)
-    luku2= int(luku2) 
 
     # tarkista onko luku parillinen vai ei
-    if luku % 2 == 0:
-        print("Syöttämäsi ensimmäinen luku on parillinen.")
+    if onko_parillinen(luku):
+        print("Syöttämäsi luku on parillinen.")
     else:
-        print("Syöttämäsi ensimmäinen luku on pariton")
+        print("Syöttämäsi luku on pariton")
+
+
+    # syötä arvo (tehtävä 3)
+    luku2 = input("Syötä toinen kokonaisluku: ")
+
+    # tarkista että käytetään kokonaislukua isidigt() metodilla
+    if not(luku2.isdigit()):
+        print("Ole hyvä ja käytä kokonaislukua.")
+        return
+
+
+    luku2 = int(luku2) 
 
     # vertaile kahta lukuarvoa
     if luku > luku2:
@@ -29,7 +42,7 @@ def main():
     elif luku == luku2:
         print("1. luku ja 2. luku ovat samansuuruiset.")
     else:
-        print("1. luku on pienempi kuin 2. luku.")
+        print("Ensimmäinen luku on pienempi kuin toinen luku.")
 
 
 if __name__ == "__main__":

@@ -4,8 +4,10 @@
 # Lisää edelliseen ohjelmaan toiminto, jossa ohjelma kysyy, montako arvosanaa käyttäjä aikoo syöttää. Lopuksi ohjelma laskee syötettyjen arvosanojen keskiarvon. Toteuta silmukka while-rakenteella.
 
 def lisaa_arvosanat(lista, pituus):
-
+    # li = listaindeksi
     li = 0
+    
+    # luuppaa annetun pituuden mukaan ja kysy arvosanoja, sekä lisää ne viitattuun listaan
     while li < pituus:
         arvosana = input("Syötä arvosana: ")
 
