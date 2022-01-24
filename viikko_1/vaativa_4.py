@@ -24,6 +24,8 @@ def main():
 
     # syötä hinnat
     tuote1 = float(input("Anna ensimmäisen tuotteen hinta: "))
+
+
     tuote2 = float(input("Anna toisen tuotteen hinta: "))
     tuote3 = float(input("Anna kolmannen tuotteen hinta: "))
 
@@ -35,7 +37,7 @@ def main():
     )
 
     # hinnat yhteensä
-    print("Kaikkien tuotteiden yhteenlaskettu hinta kahden desimaalin tarkkuudella on "+ str(tuote1+tuote2+tuote3)+" EUR.")
+    print("Kaikkien tuotteiden yhteenlaskettu hinta kahden desimaalin tarkkuudella on " + str("%.2f" % (tuote1+tuote2+tuote3))+" EUR.")
     
 
 
