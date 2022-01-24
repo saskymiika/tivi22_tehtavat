@@ -4,10 +4,14 @@
 # -Muista lisätä koodin kommentit jotka selittävät mitä ohjelma tekee.
 
 def main():
-    # syötä arvo name muuttujalle
-    name = input("Hei, syötä oma nimesi: ")
+    # syötä arvo name muuttujalle, strip() metodi poistaa tyhjät edestä ja takaa
+    nimi = input("Hei, syötä oma nimesi: ").strip()
+
+    # pakota nimi otsikko muotoon
+    nimi = nimi.title()
+
     # tervehdi
-    print("Hello " + name + "!")
+    print("Hello " + nimi + "!")
 
 
 # kutsuu pääohjelman

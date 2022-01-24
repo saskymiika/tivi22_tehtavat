@@ -20,16 +20,23 @@
 from math import pow
 
 def main():
-    print("Painoindeksi laskuri")
+    print("Painoindeksi laskuri\n")
 
-    pituus = input("Syötä pituus (cm): ")
-    paino = input("Syötä paino (kg): ")
+    pituus = input("Syötä pituus (cm): ").strip()
+
+    # jos annetut arvot eivät ole kokonaislukuja
+    if not(pituus.isdigit()):
+       print("Ole hyvä ja käytä kokonaislukua")
+       return
+
+    paino = input("Syötä paino (kg): ").strip()
     
-    if not(pituus.isdigit()) and not(paino.isdigit()):
-        print("Ole hyvä ja käytä numeroita")
-        return
+    # jos annetut arvot eivät ole kokonaislukuja
+    if not(paino.isdigit()):
+       print("Ole hyvä ja käytä kokonaislukua")
+       return
 
-    # muuta float muotoon ja paino oikeaan yksikköön
+    # muuta float muotoon ja pituus oikeaan yksikköön
     pituus = float(pituus) / 100 # senteistä metreiksi
     paino = float(paino)
 
@@ -39,7 +46,7 @@ def main():
     p_indeksi = format(paino / pow(pituus, 2), ".2f")
 
     # print("painoindeksi:", "%.2f" % p_indeksi)
-    print("Painoindeksi:", p_indeksi)
+    print("\nPainoindeksi:", p_indeksi)
 
     # muuta p_indeksi takaisin floatiksi
     p_indeksi = float(p_indeksi)

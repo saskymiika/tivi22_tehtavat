@@ -14,10 +14,10 @@ luku1, luku2 = 41, 4
 
 def main():
     # jakolasku
-    print(luku1 / luku2)
+    print("Jakolaskun tulos on:", luku1 / luku2)
 
     # jakojäännös
-    print(luku1 % luku2)
+    print("Jakolaskun jakojäännös on:", luku1 % luku2)
 
 
 if __name__ == "__main__":

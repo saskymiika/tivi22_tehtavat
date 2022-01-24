@@ -8,16 +8,17 @@
 
 from datetime import date
 
-# käytä date modulia/kirjastoa
-today = date.today()
 
 
 def main():
-    # syötä nimi
-    nimi = input("Syötä nimesi: ")
+    # syötä nimi, strip() poistaa tyhjät, title() muuttaa otsikko muotoon
+    nimi = input("Syötä nimesi: ").strip().title()
 
     # syötä ikä ja muuta data INT-muotoon
     ika = int(input("Syötä ikäsi: "))
+
+    # käytä datetime modulia/kirjastoa
+    today = date.today()
     
     # ero tästä vuodesta (2022) vuoteen 2042
     vuosia = 2042 - today.year

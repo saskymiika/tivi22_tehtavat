@@ -41,6 +41,7 @@ def lisaa_tuote(kauppalista: List) -> None:
     # lisää tuote viitattuun listaan
     kauppalista.append(tuote)
 
+
 # poista tuote funktio, määritetty parametri tyyppiä list
 def poista_tuote(kauppalista: list) -> list:
     while True:
