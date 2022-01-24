@@ -34,7 +34,7 @@ def valikko_toiminto():
 
 
 # kauppalista parametrille määritetty tyyppi: List
-def lisaa_tuote(kauppalista: list) -> list:
+def lisaa_tuote(kauppalista: List) -> None:
     # syötä tuote
     tuote = input("\nSyötä lisättävä tuote: ")
 
@@ -46,7 +46,7 @@ def poista_tuote(kauppalista: list) -> list:
     while True:
         # poistettava tuote
         print("\nKauppalistassa on: ", ", ".join(kauppalista)+"\n")
-        poista = input("Syötä poistettava tuote: ")
+        poista = input("Syötä poistettava tuote: ").strip()
 
         if poista in kauppalista:
             kauppalista.pop(kauppalista.index(poista))
