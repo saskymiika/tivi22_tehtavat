@@ -24,8 +24,6 @@ def main():
 
     # syötä hinnat
     tuote1 = float(input("Anna ensimmäisen tuotteen hinta: "))
-
-
     tuote2 = float(input("Anna toisen tuotteen hinta: "))
     tuote3 = float(input("Anna kolmannen tuotteen hinta: "))
 

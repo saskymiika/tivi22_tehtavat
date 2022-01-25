@@ -26,3 +26,32 @@
 # Hienoa! Oikea arvaus!
 
 # Kiitos ohjelman käytöstä.
+
+from random import randint 
+
+
+def main():
+    # valitse luku satunnaisesti 1 - 100 väliltä
+    luku = randint(1, 100)
+
+    while True:
+        # kysy lukua
+        arvaus = input("\nArvaa luku väliltä 1 - 100: ")
+
+        # tarkista että syötetty arvo on kokonaisluku
+        if arvaus.isdigit():
+            # vertaa arvausta annettuu lukuu
+            if int(arvaus) < luku:
+                print("\nArvaus on liian pieni.")
+            elif int(arvaus) > luku:
+                print("\nArvaus on liian suuri.")
+            else:
+                print("\nHienoa! Oikea arvaus!")
+                print("\nKiitos ohjelman käytöstä.")
+                break
+        else:
+            print("\nOle hyvä ja käytä kokonaislukua.")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,8 +1,10 @@
-# 2. Tehtävä:
+# Vaativa 3
 
-# Tee ohjelma, joka pyytää käyttäjältä luvun ja selvittää, onko se parillinen vai pariton. Hyödynnä tarkistuksessa funktiota ja jakojäännöstä.
+# Lisää edellisen tehtävän ohjelmaan toiminnallisuus, jossa käyttäjältä kysytään myös toinen luku. Lopuksi ohjelma ilmoittaa, onko ensimmäinen luku parillinen tai pariton sekä vertaa onko ensimmäinen luku isompi, pienempi tai samansuuruinen kuin toinen luku.
 
-def onko_parillinen(arvo):
+
+def onko_parillinen(arvo: int) -> int:
+    # palauttaa boolean arvon (True tai False) riippuen jakojäännöksestä
     return arvo % 2 == 0
 
 
@@ -47,8 +49,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# 3. Tehtävä:
-
-# Lisää edellisen tehtävän ohjelmaan toiminnallisuus, jossa käyttäjältä kysytään myös toinen luku. Lopuksi ohjelma ilmoittaa, onko ensimmäinen luku parillinen tai pariton sekä vertaa onko ensimmäinen luku isompi, pienempi tai samansuuruinen kuin toinen luku.

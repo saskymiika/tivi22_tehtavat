@@ -5,23 +5,14 @@
 # Jos käyttäjä antoi numeron tulostus kuten tehtävässä 1.4.
 # Muista noudattaa tyyliopasta.
 
-# funtion joka kysyy kolmea lukua ja palauttaa ne yhteen arrayhin
 from datetime import date
 
-# käytä date modulia/kirjastoa
-today = date.today()
-
-# TEHTÄVÄ 1.4
-
-# Tee ohjelma, joka kysyy käyttäjän nimeä ja ikää ja sen jälkeen 
-# tulostaa: Ajattele "NIMI"! Vuonna 2042 olet jo (ikä + 20) vuotta vanha.
 
 def main():
     # syötä nimi
-    nimi = input("Syötä nimesi: ")
+    nimi = input("Syötä nimesi: ").strip().title()
 
-    # syötä ikä ja muuta data INT-muotoon
-    # ika = int(input("Syötä ikäsi: "))
+    # syötä ikä
     ika = input("Syötä ikäsi: ")
 
     # tarkista että on luku on numeero
@@ -31,6 +22,9 @@ def main():
 
     # muuta ika kokonaisluvuksi
     ika = int(ika)
+
+    # thae tämänpäivän tiedot date.today() metodilla 
+    today = date.today()
     
     # ero tästä vuodesta (2022) vuoteen 2042
     vuosia = 2042 - today.year

@@ -6,9 +6,10 @@
 
 
 def main():
+    # syötä arvo muuttujalle
     onko_se_kissa = input("Ole hyvä ja syötä suosikki eläimesi: ")
 
-    # muuttaa kaikki kirjaimet pieniksi ja vertaa sen jälkeen
+    # casefold() metodi muuttaa kaikki kirjaimet pieniksi ja vertaa sen jälkeen
     # voisi käyttää myös string.lower() tai string.upper() metodia
     if onko_se_kissa.casefold() == "kissa":
         print("Taidat olla kissaihmisiä")

@@ -52,15 +52,15 @@ def main():
     p_indeksi = float(p_indeksi)
 
     # vertaa p_indeksiä taulukkoon
-    if p_indeksi >= 18.5 and p_indeksi < 25:
+    if p_indeksi > 18.5 and p_indeksi <= 25:
         print("Normaali painoindeksi.")
-    elif p_indeksi >= 25 and p_indeksi < 30:
+    elif p_indeksi > 25 and p_indeksi <= 30:
         print("Ylipaino eli lievä lihavuus.")
-    elif p_indeksi >= 30 and p_indeksi < 35:
+    elif p_indeksi > 30 and p_indeksi <= 35:
         print("Merkittävä lihavuus.")
-    elif p_indeksi >= 35 and p_indeksi < 40:
+    elif p_indeksi > 35 and p_indeksi <= 40:
         print("Vaikea lihavuus.")
-    elif p_indeksi >= 40 and p_indeksi < 50:
+    elif p_indeksi > 40:
         print("sairaalloinen lihavuus.")
 
 
