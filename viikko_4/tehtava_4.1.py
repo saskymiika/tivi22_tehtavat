@@ -1,15 +1,15 @@
 # tehtävä 4.1
 
 # Tee ohjelma joka kysyy käyttäjän nimeä. 
-
 # Jos annetun nimen kolmas kirjain on s, ohjelma tulostaa Jee!. Jos jotain muuta ohjelma tulostaa Plääh!
 
 # Esimerkki:
-W
+
 # Anna nimi: Kissa
 # Jee!
 # Anna nimi: Matti
 # Plääh! 
+
 
 def main():
     # kysy nimeä

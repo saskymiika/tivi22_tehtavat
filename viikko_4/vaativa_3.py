@@ -41,7 +41,7 @@ def valinta():
     kertoja = 0
 
     while True:
-        valintanumero = input("\nValitse seuraavista:\n1 = Syötä virke,\n2 = Kirjainalue, jolta sanat tulostetaan\n3 = Tulosta sanat\n0 = Lopeta\n\nValintasi: ")
+        valintanumero = input("\nValitse seuraavista:\n1 = Syötä virke\n2 = Kirjainalue, jolta sanat tulostetaan\n3 = Tulosta sanat\n0 = Lopeta\n\nValintasi: ")
 
         # jos annettu arvo on kokonaisluku ja on jokin annetuista vaihtoehdoista,
         # funktio palauttaa annetun arvon
@@ -63,8 +63,7 @@ def main():
 
     # ohjelman vakiomuuttujia
     virke = ""
-    ka_1 = None
-    ka_2 = None
+    ka_1, ka_2 = None, None
 
     while True:
         # valitse toiminto ohjelmalle
@@ -72,12 +71,12 @@ def main():
 
         if toiminto == 1:
             # syötä virke
-            virke = input("\nSyötä jokin virke: ")
+            virke = input("\nSyötä jokin virke: ").split()
 
         elif toiminto == 2:
             # valitse kirjainalue
-            ka_1  = input("\nMillä kirjain välillä halutaan sanat tulostaa, alku: ")
-            ka_2 = input("Millä kirjain välillä halutaan sanat tulostaa, loppu: ")
+            ka_1 = input("\nMillä kirjain välillä halutaan sanat tulostaa, alku: ")[0]
+            ka_2 = input("Millä kirjain välillä halutaan sanat tulostaa, loppu: ")[0]
 
         elif toiminto == 3:
             # tulosta sanat
@@ -102,7 +101,6 @@ def main():
             print("\nKiitos ohjelman käytöstä!")
             break
     
-
 
 if __name__ == "__main__":
     main()

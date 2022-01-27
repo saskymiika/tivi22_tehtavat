@@ -62,6 +62,8 @@ def main():
         print("Vaikea lihavuus.")
     elif p_indeksi > 40:
         print("sairaalloinen lihavuus.")
+    else:
+        print("Ei osunut tähän taulukkoon.")
 
 
 if __name__ == "__main__":

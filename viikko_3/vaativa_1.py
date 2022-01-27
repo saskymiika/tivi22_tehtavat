@@ -1,7 +1,6 @@
 # 1. Tehtävä
 
 # Jatka tehtävää 4.1 ja tee ohjelmaan silmukka, jolla ohjelma kysyy oikeaa numeroa käyttäjältä, kunnes hän arvaa oikein.
-
 # Esimerkkiajo: (oikea luku on määritetty 33)
 
 # Arvaa luku välillä 1 - 100: 23
