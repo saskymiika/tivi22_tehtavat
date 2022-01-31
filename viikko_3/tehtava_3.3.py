@@ -18,23 +18,6 @@
 # Syötettyjen arvosanojen keskiarvo on: 6.4
 # Kiitos ohjelman käytöstä.
 
-def lisaa_arvosanat(lista, pituus):
-
-    li = 0
-    while li < pituus:
-        arvosana = input("Syötä arvosana: ")
-
-        #tarkista että syötetään numero
-        if not arvosana.isdigit():
-            print("Ole hyvä ja käytä kokonaislukua.")
-            return
-
-        # lisää arvosana listaan kokonaislukuna
-        lista.append(int(arvosana))
-
-        # increment loop index
-        li += 1
-
 
 def main():
     print("Syötä viisi arvosanaa, yksi kerrallaan.")
@@ -43,13 +26,35 @@ def main():
     arvosanat = []
     
     # itse tehty apufunktio, kysyy 5 kertaa arvosanaa ja lisää ne arvosanat-listaan
-    lisaa_arvosanat(arvosanat, 5)
+    # lisaa_arvosanat(arvosanat, 5)
+    kerta = 1
+
+    while True:
+        # kysy arvosanaa
+        arvosana = input("\nSyötä " +str(kerta) +". arvosana: ")
+
+        # tarkista että syötetty arvo on kokonaisluku
+        if arvosana.isdigit():
+            # lisää arvosana arvosanat listaan, ja muuta tyyppi kokonaisluvuksi
+            arvosanat.append( int(arvosana) )
+            # lisää 1 kerta-muuttujaan
+            kerta += 1
+
+            # kun arvosanat listassa on 5 arvosanaa
+            if len(arvosanat) >= 5:
+                # break komennolla hyppää ulos while silmuksasta
+                break
+
+        else:
+            print("\nOle hyvä ja käytä kokonaislukua!")
+
 
     # laskee arvosanojen keskiarvon
     keskiarvo = sum(arvosanat) / len(arvosanat)
 
-    print("Syötettyjen arvosanojen keskiarvo on:",'%.1f' % keskiarvo)
-    print("Kiitos ohjelman käytöstä!")
+    # tulosta keskiarvo
+    print("\nSyötettyjen arvosanojen keskiarvo on:",'%.1f' % keskiarvo)
+    print("\nKiitos ohjelman käytöstä!")
 
 
 if __name__ == "__main__":

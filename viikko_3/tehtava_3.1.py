@@ -27,6 +27,7 @@ def main():
             print('MIAU!')
         else:
             print('WUH WUH!')
+            
 
     elif elain[0].lower() == 'l':
         # vertaa elaimen toista kirjainta
