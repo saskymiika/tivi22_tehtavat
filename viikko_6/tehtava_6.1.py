@@ -23,7 +23,7 @@ from typing import List
 def kysy_lukua(lukulista: List) -> None:
     while True:
         # syötä luku ja strip() metodilla ota tyhjät pois edestä ja takaa
-        luku = input("\nOle hyvä ja syötä kokonaisluku. Poistu syöttämällä tyhjää. Lopeta ohjelma syöttämällä \"K\"\n\nSyötteesi: ").strip()
+        luku = input("\nSyötä kokonaisluku,\npoistu valikosta syöttämällä tyhjä,\n-tai-\nlopeta ohjelma syöttämällä \"K\".\n\nSyötteesi: ").strip()
 
         # jos luku on kokonaisluku
         if luku.isdigit():

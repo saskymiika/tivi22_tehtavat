@@ -3,47 +3,57 @@
 
 # Lisää edelliseen ohjelmaan toiminto, jossa ohjelma kysyy, montako arvosanaa käyttäjä aikoo syöttää. Lopuksi ohjelma laskee syötettyjen arvosanojen keskiarvon. Toteuta silmukka while-rakenteella.
 
-def lisaa_arvosanat(lista, pituus):
-    # li = listaindeksi
-    li = 0
-    
-    # luuppaa annetun pituuden mukaan ja kysy arvosanoja, sekä lisää ne viitattuun listaan
-    while li < pituus:
-        arvosana = input("Syötä arvosana: ")
 
-        #tarkista että syötetään numero
-        if not arvosana.isdigit():
-            print("Ole hyvä ja käytä kokonaislukua.")
-            return
-
-        # lisää arvosana listaan kokonaislukuna
-        lista.append(int(arvosana))
-
-        # increment loop index
-        li += 1
+from re import T
 
 
 def main():
-    print("Syötä arvosanoja yksi kerrallaan.")
-
-    arvosanojen_maara = input("Montako arvosanaa tahdot syöttää? ")
-
-    if not arvosanojen_maara.isdigit():
-        print("Ole hyvä ja anna kokonaisluku.")
-        return
-
     # arvosanat lista, lisää tänne kaikki arvosanat
     arvosanat = []
+
+    arvosanojen_maara = 0
+
+    # kysyy koinka monta arvosanaa ohjelma tulee pyytämään
+    while True:
+        maara = input("Määritä kuinka monta arvosanaa kysytään.\n\nSyötä kokonaisluku: ")
+
+        if maara.isdigit():
+            arvosanojen_maara = int(maara)
+            break
+        else:
+            print("\nKÄYTÄ KOKONAISLUKUA.")
+
     
-    # itse tehty apufunktio, kysyy 5 kertaa arvosanaa ja lisää ne arvosanat-listaan
-    lisaa_arvosanat(arvosanat, int(arvosanojen_maara))
+    # monesko arvosana..? pidän tällä lukua siitä monettako arvosanaa kysytään.
+    mones = 1
+
+    while True:
+        # kysy arvosanaa
+        arvosana = input("\nSyötä " +str(mones) +". arvosana: ")
+
+        # tarkista että syötetty arvo on kokonaisluku
+        if arvosana.isdigit():
+            # lisää arvosana arvosanat listaan, ja muuta tyyppi kokonaisluvuksi
+            arvosanat.append( int(arvosana) )
+            # lisää 1 kerta-muuttujaan
+            mones += 1
+
+            # kun arvosanat listassa on arvosanojen_maara arvosanaa
+            if len(arvosanat) >= arvosanojen_maara:
+                # break komennolla hyppää ulos while silmuksasta
+                break
+
+        else:
+            print("\nOle hyvä ja käytä kokonaislukua!")
+
 
     # laskee arvosanojen keskiarvon
     keskiarvo = sum(arvosanat) / len(arvosanat)
 
-    print("Syötettyjen arvosanojen keskiarvo on:",'%.1f' % keskiarvo)
-    print("Kiitos ohjelman käytöstä!")
-
+    # tulosta keskiarvo
+    print("\nArvosanat:", arvosanat, "\n", "\nSyötettyjen arvosanojen keskiarvo on:",'%.1f' % keskiarvo)
+    print("\nKiitos ohjelman käytöstä!")
+    
 
 if __name__ == "__main__":
     main()

@@ -25,8 +25,7 @@ def main():
     # arvosanat lista, lisää tänne kaikki arvosanat
     arvosanat = []
     
-    # itse tehty apufunktio, kysyy 5 kertaa arvosanaa ja lisää ne arvosanat-listaan
-    # lisaa_arvosanat(arvosanat, 5)
+    # monesko arvosana..?
     kerta = 1
 
     while True:
