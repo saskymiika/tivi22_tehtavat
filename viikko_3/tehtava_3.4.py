@@ -4,9 +4,6 @@
 # Lisää edelliseen ohjelmaan toiminto, jossa ohjelma kysyy, montako arvosanaa käyttäjä aikoo syöttää. Lopuksi ohjelma laskee syötettyjen arvosanojen keskiarvon. Toteuta silmukka while-rakenteella.
 
 
-from re import T
-
-
 def main():
     # arvosanat lista, lisää tänne kaikki arvosanat
     arvosanat = []
@@ -24,7 +21,7 @@ def main():
             print("\nKÄYTÄ KOKONAISLUKUA.")
 
     
-    # monesko arvosana..? pidän tällä lukua siitä monettako arvosanaa kysytään.
+    # monesko arvosana..? pidän tällä kirjaa siitä monettako arvosanaa kysytään.
     mones = 1
 
     while True:
@@ -53,7 +50,7 @@ def main():
     # tulosta keskiarvo
     print("\nArvosanat:", arvosanat, "\n", "\nSyötettyjen arvosanojen keskiarvo on:",'%.1f' % keskiarvo)
     print("\nKiitos ohjelman käytöstä!")
-    
+
 
 if __name__ == "__main__":
     main()
