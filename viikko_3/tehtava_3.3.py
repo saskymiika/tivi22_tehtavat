@@ -1,5 +1,8 @@
-
-# Tehtävä 3.3
+"""
+Tehtävä 3.3
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Tässä tehtävässä kerrataan laskuoperaattoreiden käyttöä.
 

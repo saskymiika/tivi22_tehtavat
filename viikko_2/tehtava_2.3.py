@@ -1,4 +1,8 @@
-# Tehtävä 2.3
+"""
+Tehtävä 2.3
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Tee ohjelma, joka hyödyntää if-rakennetta. Ohjelma kysyy käyttäjältä kolme lukua ja laskee niiden summan. Jos kaikki kolme ovat samoja, tulostetaan lukujen summa kerrottuna kolmella.
 

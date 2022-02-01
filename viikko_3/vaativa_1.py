@@ -1,4 +1,8 @@
-# 1. Tehtävä
+"""
+Viikko 3 vaativa tehtävä 1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Jatka tehtävää 4.1 ja tee ohjelmaan silmukka, jolla ohjelma kysyy oikeaa numeroa käyttäjältä, kunnes hän arvaa oikein.
 # Esimerkkiajo: (oikea luku on määritetty 33)

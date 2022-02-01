@@ -1,6 +1,8 @@
-
-
 """
+Viikko 4 vaativa tehtävä 2
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+
 Lisää edelliseen ohjelman toiminnallisuus, jossa se pyytää syöttämään virkkeen ja kysyy seuraavaksi, millä kirjainvälillä sanat halutaan tulostaa.
 
 Esimerkkiajo:

@@ -1,3 +1,9 @@
+"""
+Tehtävä 2.1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
+
 # Tee ohjelma joka kysyy käyttäjän ikää ja sen mukaan minkä arvon käyttäjä antaa vastaa.
 
 # Alle 12: Ohjelma sanoo "Olet vielä lapsi".

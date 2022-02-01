@@ -1,5 +1,9 @@
 """
-Viikon 6, projektitehtävä
+Tehtävä 6.1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+
+
 Katso viikon projektitehtävänanto tästä linkistä.
 
 Tee ohjelma joka kysyy käyttäjältä lukuja ja tulostaa lopuksi joko kaikki luvat ja niiden summan tai pelkän summan. Käyttäjältä kysytään ensi raporttityyppi

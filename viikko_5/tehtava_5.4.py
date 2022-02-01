@@ -1,5 +1,7 @@
 """
 Tehtävä 5.4
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
 
 Tee kauppalistaohjelma, jossa kauppalistaan voi:
 

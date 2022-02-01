@@ -1,5 +1,7 @@
 """
-3. Tehtävä
+Viikko 4 vaativa tehtävä 3
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
 
 Lisää edelliseen ohjelmaan valikkorakenne, jossa 0 (nolla) lopettaa ohjelman suorituksen.
 

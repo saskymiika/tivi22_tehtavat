@@ -1,5 +1,8 @@
 """
 Tehtävä 4.3
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+
 
 Tulosta seuraavan merkkijonon pituus: "Hyvä koodi on kuin runo."
 

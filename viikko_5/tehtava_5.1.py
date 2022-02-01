@@ -1,5 +1,7 @@
 """
 Tehtävä 5.1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
 
 Ohjelmoi lista, jossa on viisi katuosoitetta.
 

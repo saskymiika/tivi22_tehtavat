@@ -1,5 +1,8 @@
-
-# Tehtävä 3.4
+"""
+Tehtävä 3.4
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Lisää edelliseen ohjelmaan toiminto, jossa ohjelma kysyy, montako arvosanaa käyttäjä aikoo syöttää. Lopuksi ohjelma laskee syötettyjen arvosanojen keskiarvon. Toteuta silmukka while-rakenteella.
 

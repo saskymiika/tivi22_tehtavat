@@ -1,5 +1,9 @@
 """
 Tehtävä 4.4
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+
+
 Tee ohjelma, joka tulostaa kaikki sanat lauseesta: "Non scholae sed vitae discimus".
 
 Lisää ominaisuus, jossa ohjelma ilmoittaa, kuinka monta sanaa lauseessa on.

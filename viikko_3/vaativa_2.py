@@ -1,4 +1,8 @@
-# Viikko 3 vaativa 2
+"""
+Viikko 3 vaativa tehtävä 2
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Laajenna edellistä ohjelmaa niin, että ohjelma pyytää ensin luvun, joka käyttäjän pitää arvata ja sen jälkeen käyttäjän saa yhteensä viisi yritystä arvata luvun.
 

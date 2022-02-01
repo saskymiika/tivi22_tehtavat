@@ -1,4 +1,8 @@
-# Vaativa 3
+"""
+Viikko 2 vaativa tehtävä 3
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Lisää edellisen tehtävän ohjelmaan toiminnallisuus, jossa käyttäjältä kysytään myös toinen luku. Lopuksi ohjelma ilmoittaa, onko ensimmäinen luku parillinen tai pariton sekä vertaa onko ensimmäinen luku isompi, pienempi tai samansuuruinen kuin toinen luku.
 

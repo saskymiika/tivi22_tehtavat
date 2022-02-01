@@ -1,4 +1,8 @@
-# tehtävä 4.1
+"""
+Tehtävä 4.1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Tee ohjelma joka kysyy käyttäjän nimeä. 
 # Jos annetun nimen kolmas kirjain on s, ohjelma tulostaa Jee!. Jos jotain muuta ohjelma tulostaa Plääh!

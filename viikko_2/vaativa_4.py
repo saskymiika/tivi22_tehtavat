@@ -1,4 +1,8 @@
-# 4. Tehtävä: (haastava)
+"""
+Viikko 2 vaativa tehtävä 4
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Tee ohjelma, joka laskee syötetyillä luvuilla henkilön painoindeksin.
 # Ohjelma ilmoittaa käyttäjälle painoindeksin sekä antaa tietoa, miten siihen tulisi suhtautua.

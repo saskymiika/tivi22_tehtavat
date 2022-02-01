@@ -1,4 +1,9 @@
 """
+Viikko 5 vaativa tehtävä 1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+
+
 Tee ohjelma, joka pyytää käyttäjältä merkkijonosyötteen ja tarkistaa, onko merkkijono listassa olevissa merkkijonoissa.
 
 Jos käyttäjän syöttämä merkkijono on listassa, se poistetaan.

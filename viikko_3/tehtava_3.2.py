@@ -1,4 +1,8 @@
-# Tehtävä 3.2
+"""
+Tehtävä 3.2
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Tee ohjelma, joka pyytää käyttäjältä sarjan aloitus- ja lopeusnumeron ja tulostaa sen jälkeen while-toistorakenteella arvot jonoon seuraavan esimerkin mukaisesti:
 

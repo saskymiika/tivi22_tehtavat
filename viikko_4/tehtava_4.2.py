@@ -1,4 +1,8 @@
-# Tehtävä 4.2
+"""
+Tehtävä 4.2
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Tee ohjelma, joka tulostaa joka kolmannen merkin seuraavasta merkkijonosta: "Ajattelen, siis olen!"
 

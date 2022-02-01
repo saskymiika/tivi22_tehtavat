@@ -1,4 +1,8 @@
-# Vaativa 2
+"""
+Viikko 2 vaativa tehtävä 2
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Tee ohjelma, joka pyytää käyttäjältä luvun ja selvittää, onko se parillinen vai pariton. Hyödynnä tarkistuksessa funktiota ja jakojäännöstä.
 

@@ -1,7 +1,8 @@
-
-
 """
-Tehtävä 1
+Viikko 4 vaativa tehtävä 1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+
 
 Tee ohjelma, joka pyytää syöttämään virkkeen. Virkkeen syötön jälkeen, ohjelma tulostaa isoilla kirjaimilla kaikki ne sanat, jotka alkavat kirjaimilla l-ö.
 

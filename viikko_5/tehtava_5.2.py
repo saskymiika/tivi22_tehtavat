@@ -1,5 +1,7 @@
 """
 Tehtävä 5.2
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
 
 
 Tee seuraava ohjelma while-silmukalla hyödyntäen .append()-metodia.

@@ -1,4 +1,8 @@
-# Tehtävä 2.4
+"""
+Tehtävä 2.4
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Jatka tehtävään 1.4 tekemääsi ohjelmaa.
 # Kun käyttäjä vastaa kysymykseen "Kuinka vanha olet?" tarkista, että annettu vastaus oli numero. Jos kyseessä ei ollut numero tulosta ruudulle "Ole ystävällinen ja anna ikäsi numerona."

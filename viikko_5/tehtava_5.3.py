@@ -1,5 +1,7 @@
 """
 Tehtävä 5.3
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
 
 Korjaa ohjelmat toimiviksi:
 

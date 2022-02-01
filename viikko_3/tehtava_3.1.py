@@ -1,4 +1,8 @@
-# Tehtävä 3.1
+"""
+Tehtävä 3.1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Käytä sisäkkäistä if-rakennetta ja tee ohjelma, joka pyytää käyttäjää kirjoittamaan kissa, koira, lehmä tai lammas ja tulostaa sitten tämän eläimen kutsuhuudon. Vertaa ensin sanojen alkukirjaimia ja sen jälkeen sisennetyssä ehtolauseessa tarkistat sanan toisen kirjaimen perusteella onko esim. k-kirjaimella alkava eläin kissa vai koira.
 

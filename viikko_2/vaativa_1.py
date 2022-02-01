@@ -1,4 +1,8 @@
-# Vaativa tehtävä 1
+"""
+Viikko 2 vaativa tehtävä 1
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
 
 # Ohjelmoi yksinkertainen laskin, joka kysyy kaksi lukua ja sen jälkeen kysyy, mitä luvuille tehdään (1 =  lisäys (luku1 + luku2), 2 = vähennys (luku1 - luku2), 3 = kerto (luku1 * luku2) tai 4 = jako (luku1 / luku2).
 #Lopuksi laskin laskee halutun laskutoimituksen.

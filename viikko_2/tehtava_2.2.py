@@ -1,3 +1,9 @@
+"""
+Tehtävä 2.2
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
+
 # Tee ohjelma, joka pyytää käyttäjän suosikkieläintä. Jos käyttäjän suosikkieläin on kissa, tulostetaan: "Taidat olla kissaihmisiä." Jos käyttäjä antaa minkä tahansa muun eläimen, tulostetaan: "Ei ole kissaa karvoihin katsominen,"
 
 # Tee ohjelmasi siten, että kissa == Kissa == KISSA, eli ohjelma hyväksyy sanan samaksi riippumatta isoista ja pienistä kirjaimista.
