@@ -2,6 +2,10 @@
 Viikko 3 vaativa tehtävä 1
 Miika Toivanen
 miika.toivanen@edu.sasky.fi
+
+HUOM! Näissä viikko 3:n vaativissa tehtävissä en ole jatkanut mitään tehtävää, 
+vaan olen tehnyt kokonaan uuden ohjelman tehtävänannon mukaan.
+Ei tarvitse siitä huomauttaa erikseen :)
 """
 
 # Jatka tehtävää 4.1 ja tee ohjelmaan silmukka, jolla ohjelma kysyy oikeaa numeroa käyttäjältä, kunnes hän arvaa oikein.

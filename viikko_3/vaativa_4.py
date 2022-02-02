@@ -6,51 +6,53 @@ miika.toivanen@edu.sasky.fi
 
 # Laajenna vielä edellistä ohjelmaa siten, että se kysyy, montako arvauskertaa käyttäjälle annetaan. Jos käyttäjä arvaa oikean luvun kertojen sisällä, onnittele häntä, ja ilmoita, montako arvausta jäi käyttämättä. Tällä kertaa ohjelma näyttää arvausten alussa niiden jäljellä olevan määrän.
 
-from curses import noecho
 from random import randint 
 
 
 def main():
     print("Arvaa oikea luku!")
-    lukualue = [None, None]
+    
+    lukualue = []
 
-    print("\nValitse lukualue, jonka väliltä arvattava luku otetaan")
-
-    # listan null checkeri
-    def check_nones(list):
-        for l in list:
-            if l == None:
-                return True
-        return False
-
-    # hyppää ulos silmuasta kun lukualueeseen on lisätty 2 arvoa
-    while check_nones(lukualue):
-        # jos aloituslukua ei ole syötetty
-        if lukualue[0] == None:
-            luku1 = input("\nLuvusta: ")
-
-            # jos luku1 ei ole kokonaisluku
-            if not luku1.isdigit():
-                print("Syötä kokonaisluku!")
-                # hyppää silmukan alkuun
-                continue
-            # jos on kokonaisluku, lisää lukualueeseen
-            lukualue[0] = int(luku1)
+    while True:
+        # syötä merkkijono ja ottaa pois kaikki välilyönnit
+        arvo = input("\nSyötä lukualue, jonka perusteella arvattava luku valitaan.\nSyötä lukualue muodossa 10-20.\n\nLukualueesi: ").strip().replace(" ", "")
         
-        # jos lopetuslukua ei ole syötetty
-        if lukualue[1] == None:
-            luku2 = input("Lukuun: ")
+        # jos syötetystä arvosta löytyy merkki "-"
+        if arvo.find("-") != -1: 
+            # erota - merkin perusteella arvot listaan
+            arvo = arvo.split("-")
+            
+            # jos on syötetty vähemmän tai enemmän kuin kaksi arvoa
+            if len(arvo) != 2:
+                print('ole hyvä ja syötä KAKSI kokonaislukua')
 
-            # jos ei ole kokonaisluku
-            if not luku2.isdigit():
-                print("Syötä kokonailuku!")
-                # hyppää silmukan alkuun
-                continue
-            # jos on kokonaisluku, lisää...
-            lukualue[1] = int(luku2)
+            # jos kaksi...
+            else:
+                for a in arvo:
+                    # jos luku ei ole kokonaisluku
+                    if not a.isdigit():
+                        print('käytä kokonaislukuja...')
+                        # tyhjennä lista vanhoista
+                        lukualue.clear()
+                        break
+                    # jos on kokonaisluku lisää sen listaan INT-muodossa
+                    else:
+                        lukualue.append(int(a))
+        # jos ei ole käytetty "-" merkkiä
+        else:
+            print('VIRHE! Erota luvut toisistaa merkillä "-"')
 
+        # kun meillä on vihdoinkin ne kaksi kokonaislukua.. hyppää ulos silmukasta
+        if len(lukualue) >= 2:
+            break
 
-    # valitse luku satunnaisesti 1 - 100 väliltä
+    # sort() metodi järjestää listan uudelleen pienimmästä suurimpaan
+    lukualue.sort()
+
+    print(f'\nArvattava luku valitaan {lukualue[0]} ja {lukualue[1]} väliltä')
+
+    # valitse luku satunnaisesti lukualueen väliltä
     luku = randint(lukualue[0], lukualue[1])
 
     # yrityksiä muuttuja
