@@ -18,9 +18,9 @@ def main():
     print(lause)
 
     # sananojen lukumäärä lauseessa
-    # string.split() metodi palauttaa kaikki sanat listaann
+    # string.split() metodi palauttaa kaikki sanat listaan
     # len() funktio palauttaa listan pituuden
-    print("sanojen määrä lauseessa", "\""+lause + "\":", len(lause.split()))
+    print("Sanojen määrä lauseessa", "\""+lause + "\":", len(lause.split()))
 
 
 if __name__ == "__main__":

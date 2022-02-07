@@ -31,7 +31,7 @@ def main():
     print(mjono[12:len(mjono)])
 
     # sanan kuin indeksi
-    print("Sanan \"kuin\” indeksi:", mjono.find("kuin"))
+    print("Sanan \"kuin\" indeksi:", mjono.find("kuin"))
 
 
 if __name__ == "__main__":

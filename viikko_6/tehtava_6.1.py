@@ -21,18 +21,15 @@ Ryhmän jäsenet tarkistavat myös onko koodi tyylioppaan mukaista.
 Lopuksi palauta tiedostoina testaussuunnitelma, vuokaavio, koodi sekä ainakin yhden ryhmäsi jäsenen kommentit.
 """
 
-from typing import List
 
-
-def kysy_lukua(lukulista: List) -> None:
+def kysy_lukua(lukulista):
     while True:
         # syötä luku ja strip() metodilla ota tyhjät pois edestä ja takaa
-        luku = input("\nSyötä kokonaisluku,\npoistu valikosta syöttämällä tyhjä,\n-tai-\nlopeta ohjelma syöttämällä \"K\".\n\nSyötteesi: ").strip()
+        luku = input("\nSyötä kokonaisluku\n-tai-\npoistu valikosta syöttämällä tyhjä,\n-tai-\nlopeta ohjelma syöttämällä \"K\".\n\nValintasi: ").strip()
 
         # jos luku on kokonaisluku
         if luku.isdigit():
             lukulista.append(luku)
-            print(lukulista)
         
         # jos luku on "k"
         elif luku.casefold() == "k":
@@ -77,11 +74,11 @@ def main():
         if valinta.casefold() == "l":
             # tulosta lukulistan ja niiden summan
             print("\nLukulista:", lukulista)
-            print("Lukujen summa:",sum(map(int, lukulista)))
+            print("Lukujen summa:", sum(map(int, lukulista)))
 
         elif valinta.casefold() == "s":
             # tulostaa lululistan SUMMAN
-            print("\nLukujen summa:",sum(map(int, lukulista)))
+            print("\nLukujen summa:", sum(map(int, lukulista)))
 
         # jos ei kumpikaan ehto täyty, ohjelma looppaa takaisin alkuun ja kysyy uudestaan syötettä    
 

@@ -23,7 +23,7 @@ Kiitos ohjelman käytöstä.
 import re
 
 def main():
-    virke = input("Syötä jokin virke: ")
+    virke = input("Syötä jokin virke: ").strip().lower()
 
     # etsi sanat virkkeestä regular expressionin avulla
     #re.findall() metodi palauttaa kaikki sille määritetyt virkkeet listan muodossa

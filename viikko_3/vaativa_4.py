@@ -25,7 +25,7 @@ def main():
             
             # jos on syötetty vähemmän tai enemmän kuin kaksi arvoa
             if len(arvo) != 2:
-                print('ole hyvä ja syötä KAKSI kokonaislukua')
+                print('Ole hyvä ja syötä KAKSI kokonaislukua')
 
             # jos kaksi...
             else:

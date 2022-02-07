@@ -1,0 +1,13 @@
+"""
+Tehtävä X.X
+Miika Toivanen
+miika.toivanen@edu.sasky.fi
+"""
+
+
+def main():
+    ...
+
+
+if __name__ == "__main__":
+    main()

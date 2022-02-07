@@ -17,12 +17,11 @@ miika.toivanen@edu.sasky.fi
 
 def main():
     # kysy nimeä
-    nimi = input("Mikä on nimesi? ")
+    nimi = input("Mikä on nimesi? ").title()
 
     # tarkista että nimessä on vähintään 3 kirjainta!
     if len(nimi) < 3:
         print("Nimessäsi ei ole edes kolmea kirjainta!")
-        return
 
     # tarkista käyttäjän nimen kolman kirjain
     if nimi[2] == 's':

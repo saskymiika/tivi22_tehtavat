@@ -22,8 +22,8 @@ import re
 
 def main():
     virke = input("Syötä jokin virke: ")
-    alku  = input("Millä kirjain välillä halutaan sanat tulostaa, alku: ")
-    loppu = input("Millä kirjain välillä halutaan sanat tulostaa, loppu: ")
+    alku  = input("Millä kirjain välillä halutaan sanat tulostaa, alku: ").strip()
+    loppu = input("Millä kirjain välillä halutaan sanat tulostaa, loppu: ").strip()
 
     # etsi sanat virkkeestä regular expressionin avulla
     # re.findall() metodi palauttaa kaikki sille määritetyt virkkeet listan muodossa
@@ -31,7 +31,6 @@ def main():
 
     # muuttujien "placeholderi" voidaan lisätä merkkijonoon %s-merinnällä
     # muuttuja määritetään merkkijonon perään %-virkkeellä (1_muuttuja, 2_muuttuja)
-    
     print("\nVirkkeessä oli kirjaimilla %s-%s alkavia sanoja seuraavat:\n" % (alku, loppu))
 
     for v in sanat:
