@@ -1,19 +1,12 @@
 """
-Tehtävä 5.4
+Tehtävä 7.2
 Miika Toivanen
 miika.toivanen@edu.sasky.fi
 
-Tee kauppalistaohjelma, jossa kauppalistaan voi:
 
-Lisätä tuotteen
-Poistaa syötetyn tuotteen
-Tulostaa koko kauppalistan
-Tyhjentää koko kauppalistan
-Lopettaa kauppalistan käsittelyn
+Muokkaa aiemmin tehtävässä 5.4 tekemäsi kauppalistaohjelma siten, että valikkorakenteesta kutsutaan funktioita.
 
-Tee valikkorakenne while (True) -silmukan sisään.
-
-- Muista lisätä koodiin kommentit, jotka selittävät mitä ohjelma tekee.
+Vinkki: Käytä siis aiemmin kirjoittamaasi koodia ja siirrä sitä sopivasti copy/pastella funktioiden sisälle.
 """
 
 

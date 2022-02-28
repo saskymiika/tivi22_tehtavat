@@ -1,24 +1,24 @@
-teksti = """Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+from calendar import c
 
-Pellentesque quis efficitur elit.
 
-Quisque in nibh auctor, lacinia ligula eget, mattis ante. Sed sollicitudin semper pulvinar.
+maplist = [34,56,67,98,90]
 
-Nunc gravida nulla sed tincidunt consequat.
+mydict_list = map(lambda a : {'data': a}, maplist)
 
-Nulla elementum nunc dui, nec dictum dolor aliquet sit amet.
+for item in mydict_list:
+    print(item)
 
-Suspendisse fermentum hendrerit diam sed scelerisque.
 
-Proin semper placerat finibus. Nullam erat nisl, dapibus a aliquet vel, consectetur sed felis.
+# single line function 
 
-Ut pretium dui eu ornare ultrices. Vivamus fermentum felis sed commodo accumsan.
+sumsum = lambda a, b, c : a + b + c
 
-Etiam leo justo, scelerisque quis efficitur et, consectetur sed massa.
+print("sum:", sumsum(1, 1, 1))
 
-Phasellus lacinia, est sit amet gravida volutpat, magna lectus sodales diam, eget sodales urna elit id felis.
+tupler  = lambda a : a * 2
+tripler = lambda a : a * 3
 
-Mauris pulvinar leo eu quam vestibulum dapibus.""".split("\n\n")
+myf = tupler(120)
+trip = tripler(100)
 
-for lause in teksti:
-    print(lause)
+print(myf, trip)

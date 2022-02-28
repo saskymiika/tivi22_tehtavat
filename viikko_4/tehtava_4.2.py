@@ -13,6 +13,9 @@ miika.toivanen@edu.sasky.fi
 def main():
     merkkijono = "Ajattelen, siis olen!"
 
+    # Joka kolmas merkki merkkijonosta.
+    print(merkkijono[::3])
+
     # merkkijono käännettynä
     print(merkkijono[::-1])
 
