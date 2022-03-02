@@ -1,0 +1,1 @@
+As a Python developer you can choose to throw an exception if a condition occurs.

@@ -1,0 +1,1 @@
+You can pass data, known as parameters, into a function.
