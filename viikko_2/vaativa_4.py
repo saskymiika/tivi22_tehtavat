@@ -26,7 +26,7 @@ from math import pow
 def main():
     print("Painoindeksi laskuri\n")
 
-    pituus = input("Syötä pituus (cm): ").strip()
+    pituus = input("Syötä pituus (metreissä): ").strip()
 
     # jos annetut arvot eivät ole kokonaislukuja
     if not(pituus.isdigit()):
