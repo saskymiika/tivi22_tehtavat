@@ -1,0 +1,23 @@
+KURSSI:                     
+    kurssikoodi             
+    nimi                    
+    ov                      
+    kuvaus                  
+
+OPISKELIJA:
+    opiskelijanumero
+    nimi
+    osoite
+    puhlinnumero
+    syntymäaika
+
+OPETTAJA:
+    nimi
+    osoite
+    puhelinnumero
+    oppiaine
+
+KOTITEHTÄVÄ:
+    numero
+    kuvaus
+    palautuspäivämäärä
